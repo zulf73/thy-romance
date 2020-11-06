@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import {FramePhoto} from './framePhoto.js';
+import {LeftPane} from './LeftPane.js';
+import {ChatUI} from './ChatUI.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	  <div>
+	  <ThyRFrame>
+	  <LeftPane>
+	  <FramePhoto id=472>
+	  <FramePhoto id=752>
+	  </LeftPane>
+	  <ChatUI>
+	  
+	  </ChatUI>
+	  </ThyRFrame>
+	  </div>
   );
 }
 
