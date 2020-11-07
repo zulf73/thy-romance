@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'react-google-photo/styles.css';
 import GooglePhoto from 'react-google-photo';
+import Avatar from 'material-ui';
 
 const App = () => {
   const [open, setOpen] = React.useState(false);
@@ -29,3 +30,19 @@ const images = [
 };
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
+class FramedPhoto extends Component {
+  return (
+	  <div>
+	  <Avatar alt="Name" src="/images/avatar/1.jpg" />
+	  
+	  <button onClick={this.handleOpen}>Open</button>
+      <GooglePhoto
+        open={open}
+        src={images}
+        onClose={this.handleClose}
+      />
+    </div>
+  );
+    
+};
